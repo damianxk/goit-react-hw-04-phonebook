@@ -1,0 +1,32 @@
+.list {
+  margin: 0 auto;
+  width: 50%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.item {
+  width: 100%;
+  background-color: #957d7d;
+  border-radius: 5px;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.button {
+  background-color: red;
+  color: white;
+  padding: 5px;
+  border: 0;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: black;
+  transition: 0.6s;
+}

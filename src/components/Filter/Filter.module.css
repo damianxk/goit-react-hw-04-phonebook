@@ -1,0 +1,12 @@
+.filter {
+  margin: 50px auto;
+  width: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.filter input {
+  width: 100%;
+}
