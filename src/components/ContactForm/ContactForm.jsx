@@ -55,6 +55,6 @@ export const ContactForm = ({ contacts, setContacts }) => {
 };
 
 ContactForm.propTypes = {
-  contacts: PropTypes.array,
-  setContacts: PropTypes.func,
+  contacts: PropTypes.array.isRequired,
+  setContacts: PropTypes.func.isRequired,
 };

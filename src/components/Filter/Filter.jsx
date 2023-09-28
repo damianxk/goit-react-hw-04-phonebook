@@ -22,5 +22,5 @@ export const Filter = ({ value, setFilter }) => {
 
 Filter.propTypes = {
   value: PropTypes.string,
-  setFilter: PropTypes.func,
+  setFilter: PropTypes.func.isRequired,
 };
