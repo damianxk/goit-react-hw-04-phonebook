@@ -20,12 +20,13 @@ export const ContactForm = ({ contacts, setContacts }) => {
         item => item.name.toLowerCase() === contact.name.toLowerCase()
       )
     ) {
-      return alert(`$(contact.name) already in contacts.`);
+      return alert(`${contact.name} is already in your contacts.`);
     }
 
     appendContacts(contact);
     event.target.reset();
   };
+
   return (
     <form onSubmit={addContact} className={css.form}>
       <input
