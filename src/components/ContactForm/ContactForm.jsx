@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import css from './ContactForm.module.css';
 import { nanoid } from 'nanoid';
 
@@ -51,4 +52,9 @@ export const ContactForm = ({ contacts, setContacts }) => {
       <button type="submit">Add contact</button>
     </form>
   );
+};
+
+ContactForm.propTypes = {
+  contacts: PropTypes.array,
+  setContacts: PropTypes.func,
 };

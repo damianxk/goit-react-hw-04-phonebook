@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-
 import css from './Filter.module.css';
 
 export const Filter = ({ value, setFilter }) => {
@@ -23,5 +22,5 @@ export const Filter = ({ value, setFilter }) => {
 
 Filter.propTypes = {
   value: PropTypes.string,
-  onChange: PropTypes.func,
+  setFilter: PropTypes.func,
 };

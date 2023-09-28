@@ -29,5 +29,7 @@ export const ContactList = ({ contacts, filterValue, setContacts }) => {
 };
 
 ContactList.propTypes = {
-  deleteContact: PropTypes.func,
+  contacts: PropTypes.array,
+  filterValue: PropTypes.string,
+  setContacts: PropTypes.func,
 };
