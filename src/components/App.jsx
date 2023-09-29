@@ -55,12 +55,18 @@ export const App = () => {
       <h1>Phonebook</h1>
       <ContactForm contacts={contacts} setContacts={setContacts} />
       <h2>Contacts</h2>
-      <Filter setFilter={setFilter} />
-      <ContactList
-        contacts={contacts}
-        filterValue={filter}
-        setContacts={setContacts}
-      />
+      {contacts.length > 0 ? (
+        <>
+          <Filter setFilter={setFilter} />
+          <ContactList
+            contacts={contacts}
+            filterValue={filter}
+            setContacts={setContacts}
+          />
+        </>
+      ) : (
+        ''
+      )}
     </div>
   );
 };

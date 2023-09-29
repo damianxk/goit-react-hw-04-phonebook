@@ -29,7 +29,13 @@ export const ContactList = ({ contacts, filterValue, setContacts }) => {
 };
 
 ContactList.propTypes = {
-  contacts: PropTypes.array.isRequired,
+  contacts: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string,
+      name: PropTypes.string,
+      number: PropTypes.string,
+    }).isRequired
+  ),
   filterValue: PropTypes.string.isRequired,
   setContacts: PropTypes.func.isRequired,
 };
